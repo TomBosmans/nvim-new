@@ -1,3 +1,4 @@
 return {
-  { "machakann/vim-sandwich" }
+  "machakann/vim-sandwich",
+  event = { "BufReadPost" },
 }

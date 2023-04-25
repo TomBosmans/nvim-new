@@ -3,6 +3,7 @@ return {
   dependencies = {
     "nvim-treesitter/playground",
   },
+  config = require("plugins/treesitter/config"),
   build = ":TSUpdate",
   event = "BufReadPost",
 }

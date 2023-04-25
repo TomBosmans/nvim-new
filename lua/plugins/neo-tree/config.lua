@@ -22,7 +22,7 @@ return function()
     },
     window = {
       position = "left",
-      width = 25,
+      width = 30,
       mappings = {
         ["<cr>"] = "open_with_window_picker",
         ["<C-x>"] = "split_with_window_picker",
@@ -37,19 +37,5 @@ return function()
         end,
       },
     },
-    git_status = {
-      window = {
-        position = "float",
-        mappings = {
-          ["A"]  = "git_add_all",
-          ["u"] = "git_unstage_file",
-          ["a"] = "git_add_file",
-          ["r"] = "git_revert_file",
-          ["c"] = "git_commit",
-          ["p"] = "git_push",
-          ["g"] = "git_commit_and_push",
-        }
-      }
-    }
   })
 end

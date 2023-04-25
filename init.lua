@@ -4,11 +4,9 @@ require("core")
 require("bootstraps")
 
 require("lazy").setup("plugins", {
-  --  defaults = { lazy = true },
+  defaults = { lazy = true },
   install = { colorscheme = { "catppuccin" } },
-  ui = {
-    border = "rounded"
-  }
+  ui = { border = "rounded" }
 })
 
 require("keybindings")

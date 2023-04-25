@@ -1,14 +1,27 @@
 return function()
   local cmp = require("cmp")
-  local lspkind = require("lspkind")
+  local kinds = require("utils.kinds")
 
   cmp.setup({
     formatting = {
       fields = { "abbr", "kind", "menu" },
-      format = lspkind.cmp_format({
-        mode = "symbol_text",
-        maxwidth = 50,
-      }),
+      format = function(entry, vim_item)
+        local abbr = vim_item.abbr
+        local icon = kinds[vim_item.kind]
+        local kind = vim_item.kind
+        local source = ({
+          buffer = "Buffer",
+          nvim_lsp = "LSP",
+          luasnip = "LuaSnip",
+          nvim_lua = "Lua",
+          latex_symbols = "LaTeX",
+        })[entry.source.name]
+
+        vim_item.kind = string.format('%s %s', icon, kind)
+        vim_item.menu = source
+        vim_item.abbr = abbr
+        return vim_item
+      end,
     },
     window = {
       completion = cmp.config.window.bordered(),

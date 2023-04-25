@@ -1,4 +1,5 @@
 return {
   "sQVe/sort.nvim",
-  opts = {}
+  opts = {},
+  event = { "BufReadPost" },
 }

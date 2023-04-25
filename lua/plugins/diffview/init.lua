@@ -1,4 +1,5 @@
 return {
   "sindrets/diffview.nvim",
-  opts = {}
+  opts = {},
+  cmd = { "DiffviewOpen", "DiffviewFileHistory", "DiffviewClose" }
 }

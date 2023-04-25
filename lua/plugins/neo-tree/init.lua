@@ -1,6 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   config = require("plugins/neo-tree/config"),
+  cmd = "Neotree",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",

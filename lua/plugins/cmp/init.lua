@@ -5,8 +5,8 @@ return {
     { "hrsh7th/cmp-path" },
     { "hrsh7th/cmp-buffer" },
     { "hrsh7th/cmp-nvim-lsp" },
-    { "onsails/lspkind-nvim" },
-    { "L3MON4D3/LuaSnip", dependencies = { { "saadparwaiz1/cmp_luasnip" } } },
+    { "L3MON4D3/LuaSnip",    dependencies = { { "saadparwaiz1/cmp_luasnip" } } },
   },
-  config = require("plugins/cmp/config")
+  event = "InsertEnter",
+  config = require("plugins.cmp.config")
 }
