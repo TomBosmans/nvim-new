@@ -1,8 +1,11 @@
-require("core/hover")
+require("core.hover")
 
 -- spellcheck
 -- vim.opt.spelllang = { 'en', 'nl' }
 -- vim.opt.spell = true
+
+-- disable tabline
+vim.o.showtabline = 0
 
 -- change split directions
 vim.opt.splitright = true

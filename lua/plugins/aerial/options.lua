@@ -1,7 +1,12 @@
 return {
   attach_mode = "global",
   backends = { "lsp", "treesitter", "markdown", "man" },
-  layout = { min_width = 28 },
+  open_automatic = false,
+  layout = {
+    min_width = 28,
+    default_direction = "right",
+    placement = "edge",
+  },
   show_guides = true,
   filter_kind = false,
   guides = {

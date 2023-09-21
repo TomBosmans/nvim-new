@@ -6,10 +6,7 @@ return function()
   })
 
   require('mason-null-ls').setup({
-    ensure_installed = {
-      "prettierd",
-      "eslint_d",
-    },
+    ensure_installed = {},
     automatic_installation = true, -- You can still set this to `true`
     handlers = {
       -- Here you can add functions to register sources.

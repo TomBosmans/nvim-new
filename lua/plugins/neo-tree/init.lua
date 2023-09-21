@@ -1,10 +1,11 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   config = require("plugins/neo-tree/config"),
-  cmd = "Neotree",
+  event = "VeryLazy",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
+    "nvim-tree/nvim-web-devicons",
     {
       "s1n7ax/nvim-window-picker",
       version = "*",
